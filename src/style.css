@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --background-color: #0f0f0f;
+    --primary-color: #0c0c0c;
+    --secondary-color: #ffcc00;
+    --glacier: #020202;
+    --grey: #000000;
+    --white: rgb(0, 0, 0);
+    --bt: #a0ccca;
+}
+
+h1 {
+    font-size: 3.125rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: .0625rem;
+}
+
+.main-btn {
+    padding: 0.625rem 1.875rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0.125rem .625rem -0.625rem rgb(0 0 0/19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+    border: 0.1875rem solid var(--grey);
+    background-color: var(--bt);
+    color: var(--secondary-color);
+    border-radius: 20px 10px 10px 10px;
+}
+
+.btn {
+    padding: 0.625rem 1.875rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0.125rem .625rem -0.625rem rgb(0 0 0/19%);
+    -webkit-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+    border: 0.1875rem solid #ffffff;
+    background-color: #ffffff;
+    color: var(--secondary-color);
+    border-radius: 600px
+}
+
+.main-btn:hover {
+    background-color: transparent;
+}
+
+.wrapper {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+
+.text-content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.navigation-wrap .scroll-on {
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation-wrap .navbar-brand img {
+    width: 6rem;
+    margin: 20px;
+}
+
+.navigation-wrap .nav-item {
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+
+.navigation-wrap {
+    background-color: #eef8f8;
+}
+
+.navigation-wrap .nav-link {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    letter-spacing: .0625rem;
+}
+
+.navigation-wrap .main-btn {
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+
+.top-banner {
+    background-image: url("../src/img/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+
+.row-1 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.text-R {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.counter-section {
+    background-image: url("../src/img/scaleimg.png");
+    padding: 30px;
+    margin-top: 100px;
+    color: #eef8f8;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.card {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.btn {
+    background-color: #be8d8d;
+}
+
+@media(max-width: 991px) {
+    h1 {
+        font-size: 2.1875rem;
+    }
+    h2 {
+        font-size: 1.375rem;
+    }
+    .text-content {
+        width: 100%;
+    }
+    .wrapper {
+        padding-top: 4.25rem;
+        padding-bottom: 3.25rem;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1.875rem;
+    }
+}
+
+@media(max-width:330px) {}
